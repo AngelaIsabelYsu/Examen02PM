@@ -1,0 +1,60 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".Ejercicio01">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Examen Calificado 02"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toTopOf="@id/viewVerde" />
+
+    <View
+        android:id="@+id/viewVerde"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:background="@drawable/figura"
+        android:alpha="0.5"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTitulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap" />
+
+    <Button
+        android:id="@+id/btnMostrar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Mostrar"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/black"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnOcultar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="8dp" />
+
+    <Button
+        android:id="@+id/btnOcultar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ocultar"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/black"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintStart_toEndOf="@+id/btnMostrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

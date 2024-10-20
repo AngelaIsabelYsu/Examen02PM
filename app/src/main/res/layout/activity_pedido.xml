@@ -1,0 +1,150 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PedidoActivity"
+    android:background="@android:color/black">
+
+    <TextView
+        android:id="@+id/tvTituloPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pedido"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <ImageView
+        android:id="@+id/ivIconoNombre"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/perfil"
+        app:layout_constraintTop_toBottomOf="@id/tvTituloPedido"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvNombreClientePedido"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nombre Cliente"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@id/ivIconoNombre"
+        app:layout_constraintTop_toTopOf="@id/ivIconoNombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <ImageView
+        android:id="@+id/ivIconoNumero"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/perfil"
+        app:layout_constraintTop_toBottomOf="@id/ivIconoNombre"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvNumeroClientePedido"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Número Cliente"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@id/ivIconoNumero"
+        app:layout_constraintTop_toTopOf="@id/ivIconoNumero"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <ImageView
+        android:id="@+id/ivIconoProductos"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/perfil"
+        app:layout_constraintTop_toBottomOf="@id/ivIconoNumero"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvProductosPedido"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Productos"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@id/ivIconoProductos"
+        app:layout_constraintTop_toTopOf="@id/ivIconoProductos"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <ImageView
+        android:id="@+id/ivIconoUbicacion"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/perfil"
+        app:layout_constraintTop_toBottomOf="@id/ivIconoProductos"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvUbicacionPedido"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ubicación"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@id/ivIconoUbicacion"
+        app:layout_constraintTop_toTopOf="@id/ivIconoUbicacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <Button
+        android:id="@+id/btnLlamar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="LLAMAR"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.28"
+        android:layout_margin="8dp" />
+
+    <Button
+        android:id="@+id/btnWsp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="WSP"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnLlamar"
+        app:layout_constraintEnd_toStartOf="@id/btnMaps"
+        app:layout_constraintWidth_percent="0.26"
+        android:layout_margin="8dp" />
+
+    <Button
+        android:id="@+id/btnMaps"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="MAPS"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.26"
+        android:layout_margin="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
